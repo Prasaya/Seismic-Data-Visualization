@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleo Seismic Data Viewer</title>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="main-container">
+        <div id="controlsPanel">
+            <h2>Filters</h2>
+            <div class="control-group">
+                <label for="propertyNameSelect">Fault Name:</label>
+                <select id="propertyNameSelect">
+                    <option value="ALL_FAULTS">-- All Faults --</option>
+                    <option value="">-- Select Fault Name --</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="lowerDepthSlider">Min Lower Depth (km):</label>
+                <input type="range" id="lowerDepthSlider" min="0" max="100" value="0">
+                <div id="lowerDepthValue" class="slider-value">0 km</div>
+            </div>
+            <div id="infoBox">
+                <h2>Feature Information</h2>
+                <p>Click on a feature to see its details here.</p>
+            </div>
+        </div>
+        <div id="cesiumContainer"></div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
