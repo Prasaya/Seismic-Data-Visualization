@@ -11,6 +11,9 @@ The application allows users to:
 *   Click on individual faults to display detailed information such as dip, rake, depth, and source.
 *   Navigate the globe with integrated Cesium World Terrain and choose from various imagery base layers.
 
+    https://github.com/user-attachments/assets/e8783e2e-fca6-43c5-b5ad-eac205d76b29
+
+
 ## Tech Stack
 *   HTML, CSS, JavaScript 
 *   [CesiumJS](https://cesium.com/platform/cesiumjs/)
